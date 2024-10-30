@@ -10,7 +10,7 @@ const SignUp = () => {
         console.log('Success:', values);
     };
     return (
-        <div className=' my-40 '>
+        <div className='my-20 md:my-40 '>
 
 
             <div className=' flex justify-center items-center '>
@@ -30,7 +30,7 @@ const SignUp = () => {
                         },
                     }}
                 >
-                    <div className='w-full md:w-1/4'>
+                    <div className='w-full md:w-1/4 px-5'>
                         <Form
                             name="contact"
                             initialValues={{ remember: false }}
