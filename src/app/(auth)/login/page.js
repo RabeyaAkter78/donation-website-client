@@ -10,7 +10,7 @@ const Login = () => {
         console.log('Success:', values);
     };
     return (
-        <div className=' my-40 '>
+        <div className='my-20 md:my-40 '>
 
 
             <div className=' flex justify-center items-center '>
@@ -30,7 +30,7 @@ const Login = () => {
                         },
                     }}
                 >
-                    <div className='w-1/4'>
+                    <div className='w-full md:w-1/4 mx-5'>
                         <Form
                             name="contact"
                             initialValues={{ remember: false }}
@@ -72,16 +72,17 @@ const Login = () => {
                                     placeholder="********"
                                 />
                             </Form.Item>
-                            <div className='flex justify-between items-center'>
-                                <Form.Item
-                                    name="checkbox"
-                                    style={{}}
-                                >
+                            <div className='flex justify-between items-center my-5'>
+                                <div>
+
                                     <Checkbox>Remember me</Checkbox>
-                                </Form.Item>
-                                <Link href="/forgot-password">
-                                    <p className="text-red-500 font-bold">Forgot Password</p>
-                                </Link>
+
+                                </div>
+                                <div>
+                                    <Link href="/forgot-password">
+                                        <p className="text-red-500 font-bold">Forgot Password</p>
+                                    </Link>
+                                </div>
                             </div>
                             <Form.Item className="text-center">
                                 <button
