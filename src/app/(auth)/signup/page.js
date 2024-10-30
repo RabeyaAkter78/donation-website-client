@@ -30,7 +30,7 @@ const SignUp = () => {
                         },
                     }}
                 >
-                    <div className='w-1/4'>
+                    <div className='w-full md:w-1/4'>
                         <Form
                             name="contact"
                             initialValues={{ remember: false }}
@@ -43,23 +43,62 @@ const SignUp = () => {
                                     <Image src={logo} alt='logo ' height={0} width={0}></Image>
                                 </div>
                                 <div className='my-10 flex flex-col justify-center items-center'>
-                                    <h1 className='text-3xl font-bold'>Welcome Back</h1>
-                                    <p>Greetings, Stranger!</p>
+                                    <h1 className='text-3xl font-bold'>Introduce Yourself</h1>
+                                    <p className='text-md text-neutral-500'>Greetings, Stranger!</p>
                                 </div>
                             </div>
+                            {/* <div className='flex flex-col md:flex-row justify-between items-center gap-2'>
+                                <Form.Item
+                                    name="frist-name"
+                                    label={<p className="text-md">Frist Name</p>}
+                                >
+                                    <Input
+
+                                        required
+                                        style={{ padding: "6px", }}
+                                        className=" text-md"
+                                        placeholder="John"
+                                    />
+                                </Form.Item>
+                                <Form.Item
+                                    name="second-name"
+                                    label={<p className=" text-md">Last Name</p>}
+                                    style={{}}
+                                >
+                                    <Input
+
+                                        required
+                                        style={{ padding: "6px" }}
+                                        className=" text-md"
+                                        placeholder="Your Name"
+                                    />
+                                </Form.Item>
+                            </div> */}
                             <Form.Item
                                 name="name"
-                                label={<p className=" text-md">Full Name</p>}
-                                style={{}}
+                                label={<p className="text-md">Name</p>}
                             >
                                 <Input
 
                                     required
-                                    style={{ padding: "6px" }}
+                                    style={{ padding: "6px", }}
                                     className=" text-md"
-                                    placeholder="Your Name"
+                                    placeholder="John Doe"
                                 />
                             </Form.Item>
+                            <Form.Item
+                                name="email"
+                                label={<p className=" text-md">Password</p>}
+                                style={{}}
+                            >
+                                <Input
+                                    required
+                                    style={{ padding: "6px" }}
+                                    className=" text-md"
+                                    placeholder="jhondoe@gmail.com"
+                                />
+                            </Form.Item>
+
                             <Form.Item
                                 name="password"
                                 label={<p className=" text-md">Password</p>}
@@ -72,17 +111,31 @@ const SignUp = () => {
                                     placeholder="********"
                                 />
                             </Form.Item>
-                            <div className='flex justify-between items-center'>
-                                <Form.Item
-                                    name="checkbox"
-                                    style={{}}
-                                >
-                                    <Checkbox>Remember me</Checkbox>
-                                </Form.Item>
-                                <Link href="/forgot-password">
-                                    <p className="text-red-500 font-bold">Forgot Password</p>
-                                </Link>
-                            </div>
+                            <Form.Item
+                                name="country"
+                                label={<p className=" text-md">Country</p>}
+                                style={{}}
+                            >
+                                <Input
+                                    required
+                                    style={{ padding: "6px" }}
+                                    className=" text-md"
+                                    placeholder="United States"
+                                />
+                            </Form.Item>
+
+
+                            <Form.Item
+                                name="checkbox"
+                            >
+                                <Checkbox>I agree to Terms & Conditions</Checkbox>
+                            </Form.Item>
+                            <Form.Item
+                                name="checkbox"
+                            >
+                                <Checkbox>Subscribe for latest updates</Checkbox>
+                            </Form.Item>
+
                             <Form.Item className="text-center">
                                 <button
                                     className="text-center w-full  p-2 font-bold text-2xl bg-gradient-to-r from-red-900 to-red-700  text-white px-10 py-2 rounded-md shadow-lg"
@@ -92,15 +145,15 @@ const SignUp = () => {
                                 </button>
                             </Form.Item>
                         </Form>
-                        <Link href="/signup">
+                        <Link href="/login">
                             <p className='text-center my-10'> Already Have an Accaount? <span className='text-red-500 underline'>Login</span> </p>
                         </Link>
                     </div>
                 </ConfigProvider>
-            </div>
+            </div >
 
 
-        </div>
+        </div >
     );
 };
 
