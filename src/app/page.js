@@ -6,6 +6,7 @@ import ChrisAction from "./(WithNavbarFooter)/christ-action/page";
 import Projects from "./(WithNavbarFooter)/projects/page";
 import HowItWorks from "./(WithNavbarFooter)/how-it-works/page";
 import MonthlyIncome from "./component/Projects/MonthlyIncome/MonthlyIncome";
+import Movement from "./component/Movement/Movement";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <MonthlyIncome />
       <HowItWorks />
       <Projects />
+      <Movement />
     </main>
   );
 }
