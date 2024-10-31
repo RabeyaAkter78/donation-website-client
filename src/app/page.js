@@ -10,6 +10,7 @@ import Movement from "./component/Movement/Movement";
 import TransparentFinance from "./(WithNavbarFooter)/finance/page";
 import Testimopnials from "./(WithNavbarFooter)/testimonials/page";
 import Mission from "./(WithNavbarFooter)/mission/page";
+import FAQ from "./(WithNavbarFooter)/faq/page";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <TransparentFinance />
       <Testimopnials />
       <Mission />
+      <FAQ />
     </main>
   );
 }
