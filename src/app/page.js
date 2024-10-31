@@ -9,6 +9,7 @@ import MonthlyIncome from "./component/Projects/MonthlyIncome/MonthlyIncome";
 import Movement from "./component/Movement/Movement";
 import TransparentFinance from "./(WithNavbarFooter)/finance/page";
 import Testimopnials from "./(WithNavbarFooter)/testimonials/page";
+import Mission from "./(WithNavbarFooter)/mission/page";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Movement />
       <TransparentFinance />
       <Testimopnials />
+      <Mission />
     </main>
   );
 }
