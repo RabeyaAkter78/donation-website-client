@@ -1,13 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import { FaUsers, FaHandsHelping, FaProjectDiagram } from "react-icons/fa"; // Import icons
+import { FaUsers, FaHandsHelping, FaProjectDiagram } from "react-icons/fa";
 import hero from "../../../images/hero.jpg";
 import Link from "next/link";
 import { LuPlayCircle } from "react-icons/lu";
 const HomePage = () => {
     return (
         <div className="relative">
-            {/* Hero Section Background Image with Black Overlay */}
             <div className="relative h-screen w-full">
                 <Image
                     src={hero}
@@ -16,11 +15,9 @@ const HomePage = () => {
                     objectFit="cover"
                     className="h-screen object-cover"
                 />
-                {/* Black Overlay */}
                 <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
 
-            {/* Hero Section Content */}
             <div className="flex flex-col justify-center items-center absolute top-[40%] w-full px-4 text-center space-y-4">
                 <span className="bg-red-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
                     25th Anniversary
@@ -46,8 +43,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            {/* Statistics Section with Icons */}
-            <div className="absolute bottom-0 w-full bg-red-700 text-white py-4 flex justify-around items-center">
+            <div className="px-2 absolute bottom-0 w-full bg-red-700 text-white py-4 flex flex-col md:flex-col gap-5 justify-around items-center">
 
                 <div className="flex justify-center items-center border p-3 rounded-xl gap-2">
                     <FaUsers className="bg-white text-primaryColor p-2 h-10 w-10 rounded-xl" />
