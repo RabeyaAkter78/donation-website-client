@@ -7,6 +7,7 @@ import Projects from "./(WithNavbarFooter)/projects/page";
 import HowItWorks from "./(WithNavbarFooter)/how-it-works/page";
 import MonthlyIncome from "./component/Projects/MonthlyIncome/MonthlyIncome";
 import Movement from "./component/Movement/Movement";
+import TransparentFinance from "./(WithNavbarFooter)/finance/page";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <HowItWorks />
       <Projects />
       <Movement />
+      <TransparentFinance />
     </main>
   );
 }
