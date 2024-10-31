@@ -61,7 +61,6 @@ const TransparentFinance = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
