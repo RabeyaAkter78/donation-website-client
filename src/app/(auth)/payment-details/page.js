@@ -113,7 +113,7 @@ const PaymentDetails = () => {
                                     className="text-center w-full  p-2 font-bold text-2xl bg-gradient-to-r from-red-900 to-red-700  text-white px-10 py-2 rounded-md shadow-lg"
                                     type="submit"
                                 >
-                                    Next
+                                    Join Jesus Loves You
                                 </button>
                             </Form.Item>
                         </Form>
