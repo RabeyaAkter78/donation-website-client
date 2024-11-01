@@ -34,7 +34,7 @@ function Footer() {
         { name: "Open Ledger", link: "" },
         { name: "Budgets", link: "" },
         { name: "Running Costs", link: "" },
-        { name: "Policies", link: "" },
+        { name: "Policies", link: "/component/policy" },
     ];
 
     const onFinish = async (values) => {
