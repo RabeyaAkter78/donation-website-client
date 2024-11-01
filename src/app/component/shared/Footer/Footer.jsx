@@ -25,16 +25,16 @@ function Footer() {
     const impact = [
         { name: "Projects", link: "" },
         { name: "Grants", link: "" },
-        { name: "Donations", link: "" },
+        { name: "Donations", link: "/component/donation" },
         { name: "Privacy", link: "" },
         { name: "How it works", link: "" },
         { name: "Terms & Conditions", link: "" },
     ];
     const finance = [
-        { name: "Open Ledger", link: "" },
+        { name: "Open Ledger", link: "/component/ledger" },
         { name: "Budgets", link: "" },
         { name: "Running Costs", link: "" },
-        { name: "Policies", link: "" },
+        { name: "Policies", link: "/component/policy" },
     ];
 
     const onFinish = async (values) => {
