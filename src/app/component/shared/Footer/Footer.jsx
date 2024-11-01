@@ -23,7 +23,7 @@ function Footer() {
         { name: "What we fund", link: "" },
     ];
     const impact = [
-        { name: "Projects", link: "" },
+        { name: "Projects", link: "/component/all-project" },
         { name: "Grants", link: "/component/grants" },
         { name: "Donations", link: "/component/donation" },
         { name: "Privacy", link: "" },
