@@ -24,7 +24,7 @@ function Footer() {
     ];
     const impact = [
         { name: "Projects", link: "" },
-        { name: "Grants", link: "" },
+        { name: "Grants", link: "/component/grants" },
         { name: "Donations", link: "/component/donation" },
         { name: "Privacy", link: "" },
         { name: "How it works", link: "" },
@@ -32,7 +32,7 @@ function Footer() {
     ];
     const finance = [
         { name: "Open Ledger", link: "/component/ledger" },
-        { name: "Budgets", link: "" },
+        { name: "Budgets", link: "/component/budget" },
         { name: "Running Costs", link: "/component/fixed-costs" },
         { name: "Policies", link: "/component/policy" },
     ];
