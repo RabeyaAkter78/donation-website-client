@@ -7,7 +7,7 @@ const CollectivePhilanThropy = () => {
             <div className="bg-primaryColor">
                 <div className="container mx-auto py-16 flex justify-between items-center text-white">
                     <p className="text-3xl">Need help or have a question?</p>
-                    <button className="bg-white text-primaryColor px-6 py-2 rounded-xl">COntact Our Team</button>
+                    <button className="bg-white text-primaryColor px-6 py-2 rounded-xl">Contact Our Team</button>
                 </div>
             </div>
             <div className="container mx-auto flex  flex-col justify-center items-center py-24 ">

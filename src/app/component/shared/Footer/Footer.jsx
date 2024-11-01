@@ -33,7 +33,7 @@ function Footer() {
     const finance = [
         { name: "Open Ledger", link: "/component/ledger" },
         { name: "Budgets", link: "" },
-        { name: "Running Costs", link: "" },
+        { name: "Running Costs", link: "/component/fixed-costs" },
         { name: "Policies", link: "/component/policy" },
     ];
 
