@@ -15,7 +15,7 @@ function Footer() {
     const [form] = Form.useForm();
     const labels = [
         { name: "Join Us", link: "" },
-        { name: "Donate", link: "" },
+        { name: "Donate", link: "/component/donate-now" },
         { name: "Our Blog", link: "/component/our-blog " },
         { name: "Faqs", link: "" },
         { name: "How it works", link: "/component/how-it-works" },
