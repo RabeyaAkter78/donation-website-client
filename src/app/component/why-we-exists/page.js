@@ -83,6 +83,28 @@ const WhyWeExists = () => {
                 title={"Why We Exist"}
                 description={"The reasons and mission behind why the Jesus Loves You Foundation exists."}
             />
+            <div className='container mx-auto'>
+                <h1 className='text-4xl font-bold pb-6'> 1. Helping the marginalized communities</h1>
+                <div className='mt-6 mb-16'>
+                    <p className='font-bold'>1. Helping the marginalized communities </p>
+                    <p className='text-neutral-600'>An explanation of the importance of helping marginalized and underserved communities. </p>
+                    <p className='font-bold'>2. Solving systemic issues </p>
+                    <p className='text-neutral-600'>How the foundation aims to solve systemic issues that create barriers for growth and development. </p>
+                    <p className='font-bold'>3. Spreading the love of Christ</p>
+                    <p className='text-neutral-600'>A focus on spreading the message of love, compassion, and support through tangible acts of service. </p>
+                </div>
+                <h1 className='text-4xl font-bold pb-6'>Our Progress</h1>
+                <div className='mt-6 mb-16'>
+                    <p className='text-neutral-600'>- Total Active Members: 1,238 </p>
+                    <p className='text-neutral-600'>- - Monthly Income: $14,132 </p>
+                    <p className='text-neutral-600'>-- Cash Distributed: $159,052 </p>
+                </div>
+                <button className='text-neutral-600 border border-neutral-700 px-4 py-2 rounded-xl'>View Ledger</button>
+
+            </div>
+
+
+
 
             {/*  */}
 
@@ -93,12 +115,12 @@ const WhyWeExists = () => {
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                         <div className=' border-2 border-neutral-500 p-5 rounded-2xl bg-white'>
                             <p className='text-neutral-800'>Total Philanthropists:</p>
-                            <p className='text-2xl md:text-6xl font-bold text-primaryColor my-2'>$14,000<span className='text-neutral-400 text-xl'>Active</span></p>
+                            <p className='text-2xl md:text-6xl font-bold text-primaryColor my-2'>$14,000<span className='text-neutral-600 text-xl'>Active</span></p>
                             <button className='text-neutral-500 border border-neutral-500 px-4 py-2 rounded-xl my-2'>View Village</button>
                         </div>
                         <div className=' border-2 border-neutral-500 p-5 rounded-2xl bg-white'>
                             <p className='text-neutral-800'>Monthly Income::</p>
-                            <p className='text-2xl md:text-6xl font-bold text-primaryColor my-2'>$13,367 <span className='text-neutral-400 text-xl'>/m</span></p>
+                            <p className='text-2xl md:text-6xl font-bold text-primaryColor my-2'>$13,367 <span className='text-neutral-600 text-xl'>/m</span></p>
                             <button className='text-neutral-500 border border-neutral-500 px-4 py-2 rounded-xl my-2'>View Ledger</button>
                         </div>
                         <div className=' border-2 border-neutral-500 p-5 rounded-2xl bg-white'>
