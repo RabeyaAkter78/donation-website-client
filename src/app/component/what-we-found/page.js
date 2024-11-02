@@ -5,59 +5,116 @@ import React from 'react';
 import SectionTitle from '../shared/SectionTitle/SectionTitle';
 import CollectivePhilanThropy from '../shared/CollectivePhilanThropy/CollectivePhilanThropy';
 import { Collapse } from 'antd';
-
+import Image from 'next/image';
+import location from "../../../images/location.png"
 const WhatWeFound = () => {
+    const faqData = [
+        {
+            question: "Who can join?",
+            answer: "Anyone who shares our values and mission is welcome to join. Whether you’re looking to volunteer, donate, or simply stay informed, our community is open to everyone."
+        },
+        {
+            question: "Who's behind the foundation?",
+            answer: "Our foundation is led by a dedicated team of professionals and volunteers who are passionate about making a difference. Learn more about our team and their backgrounds on our 'About Us' page."
+        },
+        {
+            question: "How can I learn more about your governance and legal structure?",
+            answer: "We prioritize transparency in our operations. Detailed information about our governance model, legal status, and guiding principles can be found in our Annual Report and on our Governance page."
+        },
+        {
+            question: "Is Jesus Loves You Foundation a registered charity?",
+            answer: "Yes, we are a registered charity. Our registration details and compliance information are available on our website to ensure full transparency for our donors and members."
+        },
+        {
+            question: "How does the foundation select and vet project partners?",
+            answer: "We have a rigorous vetting process to ensure that all project partners align with our mission and values. This includes background checks, impact assessments, and ongoing monitoring to ensure accountability."
+        },
+        {
+            question: "How does the foundation ensure transparent fund and project management?",
+            answer: "Our financial reports and project updates are publicly accessible. We use third-party audits and regular reporting to maintain transparency and accountability in fund management."
+        },
+        {
+            question: "Can members contribute skills or expertise beyond financial contributions?",
+            answer: "Absolutely! We welcome members to share their skills and expertise. Whether it's through volunteering, mentoring, or offering specialized services, your contributions are invaluable."
+        },
+        {
+            question: "Is there a minimum commitment period for membership?",
+            answer: "No, we understand that circumstances change. While we encourage ongoing commitment, members are free to adjust their participation level at any time."
+        },
+        {
+            question: "How does the foundation evaluate project impact over time?",
+            answer: "We conduct regular assessments of each project’s impact through metrics such as community feedback, milestones achieved, and measurable outcomes to ensure our goals are met."
+        },
+        {
+            question: "How much of my contribution goes to projects vs. operations?",
+            answer: "A significant portion of donations goes directly to projects, with a smaller percentage allocated for operational expenses. We publish an annual breakdown for full transparency."
+        },
+        {
+            question: "Can I choose to support specific types of projects or geographic areas?",
+            answer: "Yes, we provide options for donors who wish to target specific projects or regions. This allows you to contribute to causes or communities that are particularly meaningful to you."
+        },
+        {
+            question: "How does the foundation ensure diversity across different regions?",
+            answer: "We aim to support projects across diverse communities, regardless of location. We prioritize regions based on need and ensure equitable distribution of resources."
+        },
+        {
+            question: "How does the foundation handle project failures?",
+            answer: "In the event of a project setback, we conduct a thorough review to learn from the experience. We apply these lessons to future projects to enhance our impact and resilience."
+        },
+        {
+            question: "Can members propose projects for consideration?",
+            answer: "Yes, members are encouraged to propose projects aligned with our mission. Our team reviews each proposal carefully to assess feasibility and potential impact."
+        },
+        {
+            question: "Can I increase or decrease my monthly contribution?",
+            answer: "Of course! You can adjust your monthly contributions as needed. We appreciate any level of support you’re able to provide to further our mission."
+        },
+        {
+            question: "Can I contribute without becoming a member?",
+            answer: "Absolutely! We welcome contributions from everyone, even if you're not a member. Donations, event participation, and spreading the word about our mission are all ways you can support us without joining."
+        },
+    ];
+
     const { Panel } = Collapse;
     return (
         <div>
-            <SectionTitle button={"What We Fund"}
-                title={"What We Fund"}
-                description={"We fund enterprises and solutions initiated and established by local entrepreneurs—those close to the problem. The local entrepreneurs we fund solve important problems more effectively and sustainably than existing approaches."} />
+            <div className='container mx-auto'>
+                <SectionTitle button={"What We Fund"}
+                    title={"What We Fund"}
+                    description={"We fund enterprises and solutions initiated and established by local entrepreneurs—those close to the problem. The local entrepreneurs we fund solve important problems more effectively and sustainably than existing approaches."} />
+            </div>
             {/* faq: */}
-            <div className='bg-red-50'>
-                <div className='container mx-auto py-24'>
-                    <div className="container mx-auto text-center mb-8">
-                        <div className='flex justify-center items-center mb-5'>
-                            <h2 className=" text-xl border border-neutral-600 rounded-xl w-16">FAQ</h2>
+            <div className=''>
+                <div className='bg-red-50'>
+                    <div className=' container mx-auto py-24'>
+                        <div className="container mx-auto text-center mb-8 ">
+                            <div className='flex justify-center items-center mb-5'>
+                                <h2 className=" text-xl border border-neutral-600 rounded-xl w-16">FAQ</h2>
+                            </div>
+                            <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
+                            <p className="text-gray-500 mt-3">
+                                Have questions? We're here to help. Here are some of the most common questions we get from our community.
+                            </p>
                         </div>
-                        <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
-                        <p className="text-gray-500 mt-3">
-                            Have questions? We're here to help. Here are some of the most common questions we get from our community.
-                        </p>
+                        <Collapse accordion>
+                            {faqData.map((item, index) => (
+                                <Panel header={item.question} key={index + 1}>
+                                    <p>{item.answer}</p>
+                                </Panel>
+                            ))}
+                        </Collapse>
                     </div>
-                    <Collapse accordion>
-                        <Panel header="Who can join?" key="1">
-                            <p>
-                                Anyone who shares our values and mission is welcome to join. Whether you’re looking to volunteer, donate, or simply stay informed,
-                                our community is open to everyone.
-                            </p>
-                        </Panel>
-                        <Panel header="How are donations used?" key="2">
-                            <p>
-                                Donations are carefully allocated to ensure maximum impact. Funds are used for community programs, outreach activities,
-                                and resources for those in need. A detailed financial report is available on our website for transparency.
-                            </p>
-                        </Panel>
-                        <Panel header="How can I volunteer?" key="3">
-                            <p>
-                                Volunteering with us is easy. You can sign up on our website, and our volunteer coordinators will reach out with information
-                                on upcoming opportunities. We welcome volunteers with all kinds of skills and expertise.
-                            </p>
-                        </Panel>
-                        <Panel header="What are the benefits of joining?" key="4">
-                            <p>
-                                Joining gives you access to a supportive community, resources for personal and professional growth, and the opportunity to make a
-                                tangible impact. Plus, you’ll receive regular updates on the positive changes we’re making together.
-                            </p>
-                        </Panel>
-                        <Panel header="Can I contribute without becoming a member?" key="5">
-                            <p>
-                                Absolutely! We welcome contributions from everyone, even if you're not a member. Donations, event participation, and spreading
-                                the word about our mission are all ways you can support us without joining.
-                            </p>
-                        </Panel>
-                    </Collapse>
                 </div>
+                {/* location: */}
+                <div className=' py-24 container mx-auto'>
+                    <h1 className='text-2xl md:text-6xl py-24 font-bold text-center'>Operational Regions</h1>
+                    <Image src={location} alt='location' className='h-full w-full object-cover'></Image>
+                </div>
+
+
+
+
+
             </div>
             <CollectivePhilanThropy />
         </div>
