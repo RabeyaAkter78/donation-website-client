@@ -16,11 +16,11 @@ function Footer() {
     const labels = [
         { name: "Join Us", link: "" },
         { name: "Donate", link: "" },
-        { name: "Our Blog", link: "" },
+        { name: "Our Blog", link: "/component/our-blog" },
         { name: "Faqs", link: "" },
         { name: "How it works", link: "" },
         { name: "Why we exist", link: "" },
-        { name: "What we fund", link: "" },
+        { name: "What we fund", link: "/component/what-we-found " },
     ];
     const impact = [
         { name: "Projects", link: "/component/all-project" },
