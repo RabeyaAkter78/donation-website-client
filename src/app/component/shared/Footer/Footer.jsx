@@ -18,7 +18,7 @@ function Footer() {
         { name: "Donate", link: "" },
         { name: "Our Blog", link: "/component/our-blog " },
         { name: "Faqs", link: "" },
-        { name: "How it works", link: "" },
+        { name: "How it works", link: "/component/how-it-works" },
         { name: "Why we exist", link: "/component/why-we-exists" },
         { name: "What we fund", link: "/component/what-we-found " },
     ];
