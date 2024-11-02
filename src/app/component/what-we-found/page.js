@@ -7,6 +7,16 @@ import CollectivePhilanThropy from '../shared/CollectivePhilanThropy/CollectiveP
 import { Collapse } from 'antd';
 import Image from 'next/image';
 import location from "../../../images/location.png"
+import education from "../../../images/education.png"
+import health from "../../../images/health.png"
+import cloud from "../../../images/cloud.png"
+import agriculture from "../../../images/agriculture.png"
+import growth from "../../../images/growth.png"
+
+
+
+
+
 const WhatWeFound = () => {
     const faqData = [
         {
@@ -108,9 +118,51 @@ const WhatWeFound = () => {
                 {/* location: */}
                 <div className=' py-24 container mx-auto'>
                     <h1 className='text-2xl md:text-6xl py-24 font-bold text-center'>Operational Regions</h1>
-                    <Image src={location} alt='location' className='h-full w-full object-cover'></Image>
-                </div>
+                    <Image src={location} alt='location' className='h-full w-full object-cover'>
 
+                    </Image>
+                </div>
+                <div className=' py-24 container mx-auto'>
+                    <h1 className='text-2xl md:text-6xl py-24 font-bold text-center'>Target Areas</h1>
+                    {/* <Image src={"location"} alt='location' className='h-full w-full object-cover'>
+                    </Image> */}
+
+                    <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
+                        <div className='p-5 border-2 border-neutral-500 rounded-xl'>
+                            <Image src={education} alt='location' className='h-16 w-20 object-cover'>
+                            </Image>
+                            <h1 className='text-4xl font-bold my-2'>Education</h1>
+                            <p className='text-neutral-400  my-2'>Solutions that are expanding access and quality of education.</p>
+                        </div>
+                        <div className='p-5 border-2 border-neutral-500 rounded-xl'>
+                            <Image src={health} alt='location' className='h-16 w-20 object-cover'>
+                            </Image>
+                            <h1 className='text-4xl font-bold my-2'>health</h1>
+                            <p className='text-neutral-400  my-2'>Solutions that are expanding access and quality in healthcare.</p>
+                        </div>
+                        <div className='p-5 border-2 border-neutral-500 rounded-xl'>
+                            <Image src={agriculture} alt='location' className='h-16 w-20 object-cover'>
+                            </Image>
+                            <h1 className='text-4xl font-bold my-2'>Agriculture</h1>
+                            <p className='text-neutral-400  my-2'>Solutions aimed at building sustainable food futures.</p>
+                        </div>
+                    </div>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-12'>
+                        <div className='p-5 border-2 border-neutral-500 rounded-xl'>
+                            <Image src={growth} alt='location' className='h-16 w-20 object-cover'>
+                            </Image>
+                            <h1 className='text-4xl font-bold my-2'>Equity</h1>
+                            <p className='text-neutral-400  my-2'>Solutions that are creating equity and inclusion for marginalized communities.</p>
+                        </div>
+                        <div className='p-5 border-2 border-neutral-500 rounded-xl'>
+                            <Image src={cloud} alt='location' className='h-16 w-20 object-cover'>
+                            </Image>
+                            <h1 className='text-4xl font-bold my-2'>Infrastructure</h1>
+                            <p className='text-neutral-400  my-2'>Technology and infrastructure solutions that help communities reach their full potential.</p>
+                        </div>
+
+                    </div>
+                </div>
 
 
 
@@ -121,4 +173,4 @@ const WhatWeFound = () => {
     );
 };
 
-export default WhatWeFound;
+export default WhatWeFound; 
