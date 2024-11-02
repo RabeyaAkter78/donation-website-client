@@ -84,6 +84,39 @@ const HowItWorks = () => {
                 title={"How It Works"}
                 description={"We bring together communities to fund local projects solving long-term challenges."}
             />
+
+            <div className='container mx-auto my-24'>
+                <div>
+                    <h1 className='text-3xl font-bold '>Step 1: Join the Movement</h1>
+                    <p className='my-6 text-neutral-700'>Join the foundation by making a monthly pledge of at least $5.
+                        This contribution funds various projects and grants you voting rights.</p>
+                    <button className=' border border-neutral-500 px-4 py-2 rounded-xl mb-16'>Join Us</button>
+
+                </div>
+                <div>
+                    <h1 className='text-3xl font-bold '>Step 2: Track Impact</h1>
+                    <p className='my-6 text-neutral-700'>Members can track project progress and get real-time updates from the field.
+                        You can view updates on ongoing projects with complete transparency.</p>
+                    <button className=' border border-neutral-500 px-4 py-2 rounded-xl mb-16'>View Projects</button>
+
+                </div>
+                <div>
+                    <h1 className='text-3xl font-bold '>Step 3: Vote on Impact</h1>
+                    <p className='my-6 text-neutral-700'>Voting sessions are called to approve key funding decisions. Every member has voting rights and can take part.</p>
+                    <button className=' border border-neutral-500 px-4 py-2 rounded-xl mb-16'>Learn More About Voting</button>
+                </div>
+                <div>
+                    <h1 className='text-3xl font-bold '>Step 4: Financial Transparency</h1>
+                    <p className='my-6 text-neutral-700'>All finances and transactions are accounted for in a public ledger.
+                        Transparency is key, and every donation and funding decision is made visible to members.</p>
+                    <button className=' border border-neutral-500 px-4 py-2 rounded-xl mb-16'>View Ledger</button>
+                </div>
+
+            </div>
+
+
+
+
             <div className="bg-[#333333]">
                 <div className="container mx-auto ">
                     <div className="flex flex-col justify-center items-center py-16">
