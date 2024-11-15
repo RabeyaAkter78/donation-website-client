@@ -5,6 +5,8 @@ import React from 'react';
 import logo from "../../../images/logo.png"
 import { Checkbox, ConfigProvider, Form, Input } from 'antd';
 import Link from 'next/link';
+import { FaArrowRotateRight } from 'react-icons/fa6';
+import { FaArrowRight } from 'react-icons/fa';
 const SignUp = () => {
     const onFinish = (values) => {
         console.log('Success:', values);
@@ -88,7 +90,7 @@ const SignUp = () => {
                             </Form.Item>
                             <Form.Item
                                 name="email"
-                                label={<p className=" text-md">Password</p>}
+                                label={<p className=" text-md">Email</p>}
                                 style={{}}
                             >
                                 <Input
@@ -138,10 +140,11 @@ const SignUp = () => {
 
                             <Form.Item className="text-center">
                                 <button
-                                    className="text-center w-full  p-2 font-bold text-2xl bg-gradient-to-r from-red-900 to-red-700  text-white px-10 py-2 rounded-md shadow-lg"
+                                    className="flex justify-center items-center gap-2  w-full  font-bold text-2xl bg-gradient-to-r from-red-900 to-red-700  text-white px-10 py-2 rounded-md shadow-lg"
                                     htmlType="submit"
                                 >
                                     SignUp
+                                    <FaArrowRight />
                                 </button>
                             </Form.Item>
                         </Form>

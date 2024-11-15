@@ -30,7 +30,7 @@ const HomePage = () => {
                     Inspired by Romans 8:38-39, we are on a mission to spread Christ's love through acts of kindness.
                 </p>
                 <div className="flex justify-center items-center gap-4 mt-4">
-                    <Link href="/how-it-works">
+                    <Link href="/component/how-it-works">
                         <button className="flex justify-center items-center gap-2 border-2 text-white px-6 py-3 rounded-md shadow-lg">
                             How Jesus Loves You Works <LuPlayCircle />
                         </button>
