@@ -21,12 +21,12 @@ const ChrisAction = () => {
                         <h1 className='text-6xl font-bold'>Together, We <br></br> Reflect <span className='text-primaryColor'>Christ's Love</span>  <br></br> Through Action</h1>
                         <p>From feeding the hungry to sheltering the homeless, we further the  <br></br> kingdom of Christ through acts of grace.</p>
                         <div className="flex flex-col md:flex-row justify-start items-center gap-4 mt-4">
-                            <Link href="">
+                            <Link href="/component/why-we-exists">
                                 <button className=" border-2  px-6 py-3 rounded-md shadow-lg">
                                     leran More
                                 </button>
                             </Link>
-                            <Link href="">
+                            <Link href="/signup">
                                 <button className="flex justify-center items-center gap-2 bg-gradient-to-r from-red-900 to-red-700 text-white px-6 py-3 rounded-md shadow-lg">
                                     Join The Movement <FaArrowRight />
                                 </button>
