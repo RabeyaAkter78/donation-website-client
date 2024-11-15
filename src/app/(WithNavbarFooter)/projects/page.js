@@ -94,9 +94,9 @@ const Projects = () => {
                         <h1 className='text-3xl font-bold my-5'>Recent Projects</h1>
                         <p className='text-neutral-500'>Donec ac odio tempor orci dapibus ultrices. Ut lectus arcu bibendum at varius vel pharetra vel. Enim sed faucibus turpis in eu mi bibendum.</p>
                     </div>
-                    <Link href="">
+                    <Link href="/component/all-project">
                         <button className="flex justify-center items-center gap-2 bg-gradient-to-r from-red-900 to-red-700 text-white px-6 py-3 rounded-md shadow-lg">
-                            Join The Movement <FaArrowRight />
+                            View All Projects <FaArrowRight />
                         </button>
                     </Link>
                 </div>
