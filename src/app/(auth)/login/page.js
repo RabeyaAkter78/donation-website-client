@@ -85,12 +85,14 @@ const Login = () => {
                                 </div>
                             </div>
                             <Form.Item className="text-center">
-                                <button
-                                    className="text-center w-full  p-2 font-bold text-2xl bg-gradient-to-r from-red-900 to-red-700  text-white px-10 py-2 rounded-md shadow-lg"
-                                    htmlType="submit"
-                                >
-                                    Login
-                                </button>
+                                <Link href="/">
+                                    <button
+                                        className="text-center w-full  p-2 font-bold text-2xl bg-gradient-to-r from-red-900 to-red-700  text-white px-10 py-2 rounded-md shadow-lg"
+                                        htmlType="submit"
+                                    >
+                                        Login
+                                    </button>
+                                </Link>
                             </Form.Item>
                         </Form>
                         <Link href="/signup">

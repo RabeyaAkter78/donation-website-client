@@ -10,12 +10,12 @@ const MonthlyIncome = () => {
                     <p className='text-3xl font-bold'>$13,367 </p>
                 </div>
                 <div className="flex flex-col md:flex-row justify-start items-center gap-4 mt-4">
-                    <Link href="">
+                    <Link href="/component/ledger">
                         <button className=" border-2  px-6 py-3 rounded-md shadow-lg">
                             View Ledger
                         </button>
                     </Link>
-                    <Link href="">
+                    <Link href="/signup">
                         <button className="flex justify-center items-center gap-2 bg-gradient-to-r from-red-900 to-red-700 text-white px-6 py-3 rounded-md shadow-lg">
                             Join Jesus Loves You
                         </button>

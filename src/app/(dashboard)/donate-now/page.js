@@ -4,7 +4,7 @@ import { FaX } from 'react-icons/fa6';
 
 const DonateNow = () => {
     return (
-        <div className='max-w-screen-lg mx-auto'>
+        <div className='max-w-screen-lg mx-auto my-20'>
             <div className='shadow-sm border rounded-2xl py-10 px-5 my-20'>
                 <div className='border rounded-2xl p-5'>
                     <p className='text-neutral-400'>Enter Donation</p>
