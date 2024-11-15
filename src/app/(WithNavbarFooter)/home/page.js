@@ -35,7 +35,7 @@ const HomePage = () => {
                             How Jesus Loves You Works <LuPlayCircle />
                         </button>
                     </Link>
-                    <Link href="/join">
+                    <Link href="/signup">
                         <button className="bg-gradient-to-r from-red-900 to-red-700 text-white px-6 py-3 rounded-md shadow-lg">
                             Join Jesus Loves You
                         </button>
