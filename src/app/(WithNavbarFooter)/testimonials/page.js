@@ -55,11 +55,7 @@ const Testimonials = () => {
                     <h1 className='text-3xl font-bold my-5'>What Our Community Says</h1>
                     <p className='text-neutral-500'>Donec ac odio tempor orci dapibus ultrices. Ut lectus arcu bibendum at varius vel pharetra vel. Enim sed faucibus turpis in eu mi bibendum.</p>
                 </div>
-                <Link href="">
-                    <button className="flex justify-center items-center gap-2 bg-gradient-to-r from-red-900 to-red-700 text-white px-6 py-3 rounded-md shadow-lg">
-                        Join The Movement <FaArrowRight />
-                    </button>
-                </Link>
+
             </div>
             <Swiper
                 slidesPerView={1}
@@ -81,7 +77,7 @@ const Testimonials = () => {
                                     <FaStar key={i} />
                                 ))}
                             </div>
-                            <p className="italic text-gray-700 mb-4">"{testimonial.testimonial}"</p>
+                            <p className="italic text-gray-700 mb-4">{testimonial.testimonial}</p>
                             <p className="text-gray-600 text-sm mb-4">{testimonial.additionalComments}</p>
                             <div className="flex justify-start items-center gap-5 mt-10">
                                 <div>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const TransparentFinance = () => {
@@ -41,8 +42,19 @@ const TransparentFinance = () => {
     return (
         <div className='bg-[#fcf4f4]'>
             <div className='container mx-auto py-24'>
-                <h1 className='text-4xl font-bold'>Open and Transparent Finances</h1>
-                <p className='text-neutral-500 mt-5 mb-16'>Transforming Financial Data into Trustworthy Insights</p>
+                <div className='flex justify-between items-center'>
+                    <div>
+                        <h1 className='text-4xl font-bold'>Open and Transparent Finances</h1>
+                        <p className='text-neutral-500 mt-5 mb-16'>Transforming Financial Data into Trustworthy Insights</p>
+                    </div>
+                    <div>
+                        <Link href="/component/ledger">
+                            <button className=' bg-primaryColor text-white px-6 py-3 rounded-md shadow-lg'>
+                                View Full Financial Reports
+                            </button>
+                        </Link>
+                    </div>
+                </div>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                     <div className=' border-2 border-neutral-500 p-5 rounded-2xl bg-white'>
                         <p className='text-neutral-800'>Monthly Income:</p>

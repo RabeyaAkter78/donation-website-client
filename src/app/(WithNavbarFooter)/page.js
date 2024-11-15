@@ -1,6 +1,8 @@
 
 import Movement from "../component/Movement/Movement";
+import OurBlogPage from "../component/our-blog/page";
 import MonthlyIncome from "../component/Projects/MonthlyIncome/MonthlyIncome";
+import Blogs from "./blogs/page";
 import ChrisAction from "./christ-action/page";
 import FAQ from "./faq/page";
 import TransparentFinance from "./finance/page";
@@ -23,6 +25,7 @@ export default function Home() {
             <Testimopnials />
             <Mission />
             <FAQ />
+            <Blogs></Blogs>
         </main>
     );
 }
