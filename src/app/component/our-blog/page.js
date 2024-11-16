@@ -4,6 +4,7 @@ import img from "../../../images/img.png"
 import user1 from "../../../images/user1.jpg"
 import SectionTitle from '../shared/SectionTitle/SectionTitle';
 import CollectivePhilanThropy from '../shared/CollectivePhilanThropy/CollectivePhilanThropy';
+import GoBackButton from '../shared/GoBackButton/GoBackButton';
 const articles = [
     {
         category: "Impact Stories",
@@ -53,7 +54,8 @@ const articles = [
 
 const OurBlogPage = () => {
     return (
-        <div className=''>
+        <div >
+            <GoBackButton  />
             <SectionTitle button={"Our blog"} title={"Our Blogs"}
                 description="Explore our latest articles and insights on impactful projects, funding criteria, and community stories. Stay informed with updates from our team and learn more about how we're making a difference." />
 

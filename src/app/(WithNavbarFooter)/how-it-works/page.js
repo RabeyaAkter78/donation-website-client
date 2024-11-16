@@ -1,13 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
+
 import React from 'react';
-
-
 const HowItWorks = () => {
-
     return (
         <div className='bg-[#fdf4f4]'>
             <div className='container mx-auto py-24'>
+
                 <div div className='flex flex-col justify-center items-center'>
                     <p className='border px-4 py-2 rounded-xl'>How It Works</p>
                     <h1 className='text-3xl font-bold'>How It Works</h1>

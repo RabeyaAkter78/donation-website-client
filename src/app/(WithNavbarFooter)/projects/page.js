@@ -112,7 +112,9 @@ const Projects = () => {
                                 <p className='text-primaryColor my-5'>{project.title}</p>
                                 <p className='font-bold text-xl h-12'>{project.subtitle}</p>
                                 <p className='text-neutral-500  line-clamp-2'>{project.details}</p>
-                                <button className='text-primaryColor flex justify-center items-center gap-2 mt-5'>Learn More<MdOutlineArrowOutward /></button>
+                                <Link href="/component/project-details">
+                                    <button className='text-primaryColor flex justify-center items-center gap-2 mt-5'>Learn More<MdOutlineArrowOutward /></button>
+                                </Link>
                             </div>
                         </div>
                     </div>)}

@@ -7,6 +7,7 @@ import CollectivePhilanThropy from '../shared/CollectivePhilanThropy/CollectiveP
 import { Collapse } from 'antd';
 import Movement from '../Movement/Movement';
 import Link from 'next/link';
+import GoBackButton from '../shared/GoBackButton/GoBackButton';
 
 const HowItWorks = () => {
     const faqData = [
@@ -79,6 +80,7 @@ const HowItWorks = () => {
     const { Panel } = Collapse;
     return (
         <div>
+            <GoBackButton />
             <SectionTitle
                 button={"How It Works"}
                 title={"How It Works"}
