@@ -3,10 +3,12 @@
 import React from 'react';
 import SectionTitle from '../shared/SectionTitle/SectionTitle';
 import CollectivePhilanThropy from '../shared/CollectivePhilanThropy/CollectivePhilanThropy';
+import GoBackButton from '../shared/GoBackButton/GoBackButton';
 
 const Ledger = () => {
     return (
         <div>
+            <GoBackButton />
             <SectionTitle button={"Our Ledger"}
 
                 title={"Ledger"}

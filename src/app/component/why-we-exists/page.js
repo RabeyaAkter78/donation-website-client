@@ -7,6 +7,7 @@ import SectionTitle from '../shared/SectionTitle/SectionTitle';
 import CollectivePhilanThropy from '../shared/CollectivePhilanThropy/CollectivePhilanThropy';
 import { Collapse } from 'antd';
 import TransparentFinance from '@/app/(WithNavbarFooter)/finance/page';
+import GoBackButton from '../shared/GoBackButton/GoBackButton';
 
 const WhyWeExists = () => {
     const faqData = [
@@ -79,6 +80,7 @@ const WhyWeExists = () => {
     const { Panel } = Collapse;
     return (
         <div>
+            <GoBackButton />
             <SectionTitle button={"Why We Exist"}
                 title={"Why We Exist"}
                 description={"The reasons and mission behind why the Jesus Loves You Foundation exists."}

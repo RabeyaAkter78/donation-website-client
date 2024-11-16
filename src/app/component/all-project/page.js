@@ -6,6 +6,7 @@ import SectionTitle from "../shared/SectionTitle/SectionTitle";
 import img from "../../../images/img.png"
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
+import GoBackButton from "../shared/GoBackButton/GoBackButton";
 const AllProject = () => {
     const data = [
         {
@@ -78,6 +79,7 @@ const AllProject = () => {
     };
     return (
         <div>
+            <GoBackButton />
             <SectionTitle
                 button={"Our Projects"}
                 title={"Projects"}
