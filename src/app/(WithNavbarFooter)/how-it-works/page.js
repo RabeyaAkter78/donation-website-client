@@ -2,10 +2,7 @@
 "use client";
 
 import React from 'react';
-
-
 const HowItWorks = () => {
-
     return (
         <div className='bg-[#fdf4f4]'>
             <div className='container mx-auto py-24'>
