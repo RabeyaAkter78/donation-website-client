@@ -5,6 +5,7 @@ import user1 from "../../../images/user1.jpg"
 import SectionTitle from '../shared/SectionTitle/SectionTitle';
 import CollectivePhilanThropy from '../shared/CollectivePhilanThropy/CollectivePhilanThropy';
 import GoBackButton from '../shared/GoBackButton/GoBackButton';
+import Link from 'next/link';
 const articles = [
     {
         category: "Impact Stories",
@@ -55,16 +56,12 @@ const articles = [
 const OurBlogPage = () => {
     return (
         <div >
-            <GoBackButton  />
+            <GoBackButton />
             <SectionTitle button={"Our blog"} title={"Our Blogs"}
                 description="Explore our latest articles and insights on impactful projects, funding criteria, and community stories. Stay informed with updates from our team and learn more about how we're making a difference." />
 
 
             <div className="max-w-4xl mx-auto py-8 px-4">
-
-
-
-
                 {articles.map((article, index) => (
                     <div
                         key={index}
@@ -88,9 +85,11 @@ const OurBlogPage = () => {
                                     />
                                     {article.author.name} • {article.author.publishedDate}
                                 </div>
-                                <button className=" border-2 border-neutral-600 px-4 py-2 rounded-lg ">
-                                    {article.buttonText}
-                                </button>
+                                <Link href='/blog-details'>
+                                    <button className=" border-2 border-neutral-600 px-4 py-2 rounded-lg ">
+                                        {article.buttonText}
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
