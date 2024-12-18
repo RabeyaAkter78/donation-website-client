@@ -157,10 +157,10 @@ function Footer() {
                     </div>
                 </div>
                 <hr />
-                <div className="flex justify-between items-center container mx-auto text-neutral-400">
+                <div className="flex flex-col md:flex-row justify-between items-center container mx-auto text-neutral-400 mt-5 md:mt-0 px-5 md:px-0">
                     <div className="flex flex-col gap-5 justify-center items-start">
 
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center">
+                        <div className="grid grid-cols-4  lg:grid-cols-5 gap-10 justify-center">
                             <FaFacebookF className="w-5 h-5 " />
                             <FaTwitter className="w-5 h-5 " />
                             <FaLinkedinIn className="w-5 h-5 " />
