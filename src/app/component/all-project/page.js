@@ -75,7 +75,7 @@ const AllProject = () => {
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
-        setCurrentPage(1); // Reset to the first page on tab change
+        setCurrentPage(1);
     };
     return (
         <div>
@@ -89,17 +89,19 @@ const AllProject = () => {
             <div className="container mx-auto">
                 <div className=" my-10">
                     {/* Tabs */}
-                    <div className="flex gap-4 mb-10 border-b border-gray-200">
-                        {['Type', 'Projects', 'Grants'].map((tab) => (
+                    <div className="flex justify-between items-center  bg-neutral-200 py-2 px-3 w-72 mx-auto rounded-xl mb-10  ">
+                        <p className="mt-3 font-semibold"> Type</p>
+                        {['Projects', 'Grants'].map((tab) => (
                             <button
                                 key={tab}
                                 onClick={() => handleTabClick(tab)}
-                                className={`py-2 px-4 font-semibold ${activeTab === tab ? 'text-red-600 border-b-2 border-red-600' : 'text-gray-500'
+                                className={` py-3 px-4 font-semibold ${activeTab === tab ? 'bg-white rounded-xl' : 'text-gray-500'
                                     }`}
                             >
                                 {tab}
                             </button>
                         ))}
+
                     </div>
 
                     {/* Project List */}

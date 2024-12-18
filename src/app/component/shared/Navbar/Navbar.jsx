@@ -57,8 +57,9 @@ const NavBar = () => {
                 <Dropdown
                     menu={{ items: aboutMenu }}
                     trigger={["hover"]}
+
                 >
-                    <a className="cursor-pointer">
+                    <a className="cursor-pointer ">
                         <Space>
                             About
                             <DownOutlined />
@@ -190,6 +191,7 @@ const NavBar = () => {
                                                     : { items: financeMenu }
                                             }
                                             trigger={["click"]}
+
                                         >
                                             <Link
                                                 className="font-medium text-lg"
