@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link';
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
@@ -15,37 +16,49 @@ const ProjectDetails = () => {
                     description={"An open view of policies and programs voted on by our community. See what's proposed, enacted, and costs associated with each policy."}
                 />
                 <div className='max-w-screen-lg mx-auto'>
-                    <p className='text-neutral-500 border-b border-b-neutral-500 py-4'>Payout date: 27 Mar 2022</p>
-                    <p className='text-neutral-500'>
-                        Fund capital used
-                    </p>
-                    <p className='text-neutral-500 text-md md:text-4xl font-bold'>
-                        $10,000
-                    </p>
-                    <div className='w-full flex justify-beween items-center gap-3'>
-                        <Link href="/signup">
-                            <button className='px-10 py-2 rounded-full bg-primaryColor text-white'>Join to Contribute</button>
-                        </Link>
-                        <Link href="/donate-now">
-                            <button className='px-10 py-2 rounded-full border'>Donate to jesus loves you</button>
-                        </Link>
+                    <div>
+                        <p className='text-neutral-500 border-b border-b-neutral-500 py-4'>Payout date: 27 Mar 2022</p>
+                        <p className='text-neutral-500'>
+                            Fund capital used
+                        </p>
+                        <p className='text-neutral-500 text-md md:text-4xl font-bold'>
+                            $10,000
+                        </p>
+                        <div className='w-full flex justify-beween items-center gap-3'>
+                            <Link href="/signup">
+                                <button className='px-10 py-2 rounded-full bg-primaryColor text-white'>Join to Contribute</button>
+                            </Link>
+                            <Link href="/donate-now">
+                                <button className='px-10 py-2 rounded-full border'>Donate to jesus loves you</button>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className='my-10 bg-neutral-100 '>
+                        <h1 className='text-xl font-semibold border-b p-6'>Relevant Data </h1>
+                        <div className='flex justify-between items-center border-b p-6'>
+                            <h3>Region</h3>
+                            <p>Sierra Leone</p>
+                        </div>
+                        <div className='flex justify-between items-center border-b p-6'>
+                            <h3>Sector</h3>
+                            <p>Agriculture</p>
+                        </div>
+                        <div className='flex justify-between items-center border-b p-6'>
+                            <h3>Farms Enrolled</h3>
+                            <p>30</p>
+                        </div>
+                    </div>
+                    <div className='my-10 bg-neutral-100 p-6'>
+                        <p>About</p>
+                        <h1 className='text-xl font-medium'> Refugee Survival, a Challenge</h1>
+                        <p className='text-neutral-600 my-5'>Uganda is one of the leading refugee-hosting countries with over 1.5M refugees whose sole survival is dependent on handouts. The World Food Program gives refugees $5.4 per head or equivalent in food rations per month, barely enough to sustain. As a result, many refugees are left in vulnerable situations with no additional means to supplement. This situation is exacerbated for women-led households and urban refugees. For example, 81% of the refugees in Uganda are women and children, and 64% of the homes are women-led (UNHCR 2020). As for urban refugees, Kampala alone has over 80,000 refugees who don't receive any aid, according to the refugee policy.</p>
+                        <p className='text-neutral-600 my-5'>Uganda is one of the leading refugee-hosting countries with over 1.5M refugees whose sole survival is dependent on handouts. The World Food Program gives refugees $5.4 per head or equivalent in food rations per month, barely enough to sustain. As a result, many refugees are left in vulnerable situations with no additional means to supplement. This situation is exacerbated for women-led households and urban refugees. For example, 81% of the refugees in Uganda are women and children, and 64% of the homes are women-led (UNHCR 2020). As for urban refugees, Kampala alone has over 80,000 refugees who don't receive any aid, according to the refugee policy.</p>
+                        <p className='text-neutral-600 my-5'>Uganda is one of the leading refugee-hosting countries with over 1.5M refugees whose sole survival is dependent on handouts. The World Food Program gives refugees $5.4 per head or equivalent in food rations per month, barely enough to sustain. As a result, many refugees are left in vulnerable situations with no additional means to supplement. This situation is exacerbated for women-led households and urban refugees. For example, 81% of the refugees in Uganda are women and children, and 64% of the homes are women-led (UNHCR 2020). As for urban refugees, Kampala alone has over 80,000 refugees who don't receive any aid, according to the refugee policy.</p>
                     </div>
                 </div>
+
             </div>
-            <div className='container mx-auto'>
-                <div className="flex flex-col md:flex-row justify-start items-center gap-4 mt-4">
-                    <Link href="">
-                        <button className=" border-2  px-6 py-3 rounded-md shadow-lg">
-                            Join Us
-                        </button>
-                    </Link>
-                    <Link href="">
-                        <button className="flex justify-center items-center gap-2 bg-gradient-to-r from-red-900 to-red-700 text-white px-6 py-3 rounded-md shadow-lg">
-                            Make a One-time Donation <FaArrowRight />
-                        </button>
-                    </Link>
-                </div>
-            </div>
+
             <CollectivePhilanThropy />
         </div>
     );
