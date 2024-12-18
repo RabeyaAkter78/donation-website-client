@@ -29,27 +29,26 @@ const NavBar = () => {
     }, []);
 
     const aboutMenu = [
-        { key: "1", label: <Link href="/about-us">How Jesus Loves You Works</Link> },
-        { key: "2", label: <Link href="/our-team">Why We Exists</Link> },
-        { key: "3", label: <Link href="/our-impact">Why We Fund</Link> },
-        { key: "3", label: <Link href="/our-impact">Startegic Roadmap</Link> },
-        { key: "3", label: <Link href="/our-impact">Our Blogs</Link> },
+        { key: "1", label: <Link href="/component/how-it-works">How Jesus Loves You Works</Link> },
+        { key: "2", label: <Link href="/component/why-we-exists">Why We Exists</Link> },
+        { key: "3", label: <Link href="/component/what-we-found">Wht We Fund</Link> },
+        { key: "3", label: <Link href="">Startegic Roadmap</Link> },
+        { key: "3", label: <Link href="/component/our-blog">Our Blogs</Link> },
     ];
-
     const impactMenu = [
-        { key: "1", label: <Link href="/finance-reports">Projects</Link> },
-        { key: "2", label: <Link href="/donor-list">Grants</Link> },
-        { key: "3", label: <Link href="/financial-policies">Donations</Link> },
+        { key: "1", label: <Link href="/component/all-project">Projects</Link> },
+        { key: "2", label: <Link href="/component/grants">Grants</Link> },
+        { key: "3", label: <Link href="/component/donation">Donations</Link> },
     ];
     const financeMenu = [
-        { key: "1", label: <Link href="/finance-reports">Finance Reports</Link> },
-        { key: "2", label: <Link href="/donor-list">Donor List</Link> },
-        { key: "3", label: <Link href="/financial-policies">Financial Policies</Link> },
+        { key: "1", label: <Link href="/component/ledger">Finance Reports</Link> },
+        { key: "2", label: <Link href="">Donor List</Link> },
+        { key: "3", label: <Link href="">Financial Policies</Link> },
     ];
 
     const labels = [
         { name: "Home", link: "/" },
-        { name: "Donate", link: "/donate" },
+        { name: "Donate", link: "/donate-now" },
         {
             name: "About",
             isDropdown: true,
