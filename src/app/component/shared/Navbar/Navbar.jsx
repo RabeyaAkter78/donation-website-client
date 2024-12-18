@@ -29,11 +29,11 @@ const NavBar = () => {
     }, []);
 
     const aboutMenu = [
-        { key: "1", label: <Link href="/component/how-it-works">How Jesus Loves You Works</Link> },
+        { key: "1", label: <Link href="/component/how-it-works">How Jesus Loves You Works</Link>, },
         { key: "2", label: <Link href="/component/why-we-exists">Why We Exists</Link> },
         { key: "3", label: <Link href="/component/what-we-found">Wht We Fund</Link> },
-        { key: "3", label: <Link href="">Startegic Roadmap</Link> },
-        { key: "3", label: <Link href="/component/our-blog">Our Blogs</Link> },
+        { key: "4", label: <Link href="">Startegic Roadmap</Link> },
+        { key: "5", label: <Link href="/component/our-blog">Our Blogs</Link> },
     ];
     const impactMenu = [
         { key: "1", label: <Link href="/component/all-project">Projects</Link> },
@@ -103,6 +103,7 @@ const NavBar = () => {
         },
     ];
 
+
     const handleMobileMenuClick = () => {
         setDrawerVisible(!drawerVisible);
     };
@@ -122,8 +123,8 @@ const NavBar = () => {
                             <Image
                                 src={logo}
                                 alt="logo"
-                                height={0}
-                                width={0}
+                                height={40}
+                                width={40}
                                 className="lg:h-12 h-16 w-auto rounded-full"
                             />
                         </Link>
@@ -138,23 +139,38 @@ const NavBar = () => {
                         )}
 
                         {!isMobile && (
-                            <div className="hidden lg:flex justify-center items-center gap-10 font-semibold ">
+                            <div className="hidden lg:flex justify-center items-center gap-10 font-semibold  ">
                                 {labels.map((item, index) => (
                                     <div key={index}>
                                         {item.isDropdown ? (
-                                            item.dropdown
+                                            <Dropdown
+                                                menu={{
+                                                    items: item.name === "About" ? aboutMenu :
+                                                        item.name === "Impact" ? impactMenu :
+                                                            financeMenu,
+                                                }}
+                                                trigger={["click"]}
+                                            >
+                                                <a className="cursor-pointer ">
+                                                    <Space>
+                                                        {item.name}
+                                                        <DownOutlined />
+                                                    </Space>
+                                                </a>
+                                            </Dropdown>
                                         ) : (
-                                            <Link className="" href={item.link}>
-                                                <button className="  ">
+                                            <Link href={item.link}>
+                                                <button className="px-4 font-medium text-lg ">
                                                     {item.name}
                                                 </button>
                                             </Link>
                                         )}
                                     </div>
                                 ))}
+
                             </div>
                         )}
-
+                        {/* login & registration */}
                         {!isMobile && (
                             <div className="hidden lg:flex items-center ml-auto space-x-4">
                                 <Link href="/login">
@@ -171,47 +187,46 @@ const NavBar = () => {
                         )}
                     </div>
                 </div>
-
+                {/* Dreawer */}
                 {isMobile && (
                     <Drawer
                         title="Menu"
                         placement="left"
                         onClose={() => setDrawerVisible(false)}
                         open={drawerVisible}
+                        width={"300px"}
                     >
-                        <div className="flex flex-col items-center space-y-4">
+                        <div className="flex flex-col items-center space-y-4 ">
                             {labels.map((item, index) => (
                                 <div key={index}>
                                     {item.isDropdown ? (
                                         <Dropdown
-                                            menu={
-                                                item.name === "About"
-                                                    ? { items: aboutMenu }
-                                                    : { items: financeMenu }
-                                            }
+                                            menu={{
+                                                items: item.name === "About" ? aboutMenu :
+                                                    item.name === "Impact" ? impactMenu :
+                                                        financeMenu,
+                                            }}
                                             trigger={["click"]}
-
+                                            className="text-lg font-semibold"
                                         >
-                                            <Link
-                                                className="font-medium text-lg"
-                                                onClick={(e) => e.preventDefault()}
-                                            >
-                                                {item.name}
-                                            </Link>
+                                            <a className="cursor-pointer ">
+                                                <Space >
+                                                    {item.name}
+                                                    <DownOutlined />
+                                                </Space>
+                                            </a>
                                         </Dropdown>
                                     ) : (
                                         <Link href={item.link}>
-                                            <button
-                                                className="px-4 font-medium text-lg"
-                                                onClick={() => select(index)}
-                                            >
+                                            <button className="px-4 font-medium text-lg">
                                                 {item.name}
                                             </button>
                                         </Link>
                                     )}
                                 </div>
                             ))}
-                            <div className="flex justify-center items-center gap-2">
+
+                            <div className="flex flex-col md:flex-row justify-center items-center gap-2">
                                 <Link href="/login">
                                     <button className="border-2 text-black px-10 py-3 rounded-md shadow-lg">
                                         Sign In

@@ -5,7 +5,7 @@ import img from "../../../../images/img.png";
 const SectionTitle = ({ button, title, description }) => {
     return (
         <div className=''>
-            <div className='max-w-screen-lg mx-auto'>
+            <div className='max-w-screen-lg mx-auto px-4 md:px-0'>
                 <div div className='flex flex-col justify-center items-center'>
                     <p className='border px-4 py-2 rounded-xl bg-primaryColor text-white'>{button}</p>
                     <h1 className='text-3xl md:text-6xl font-bold py-6 text-center'>{title}</h1>

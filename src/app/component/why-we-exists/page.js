@@ -8,6 +8,7 @@ import CollectivePhilanThropy from '../shared/CollectivePhilanThropy/CollectiveP
 import { Collapse } from 'antd';
 import TransparentFinance from '@/app/(WithNavbarFooter)/finance/page';
 import GoBackButton from '../shared/GoBackButton/GoBackButton';
+import Link from 'next/link';
 
 const WhyWeExists = () => {
     const faqData = [
@@ -85,7 +86,7 @@ const WhyWeExists = () => {
                 title={"Why We Exist"}
                 description={"The reasons and mission behind why the Jesus Loves You Foundation exists."}
             />
-            <div className='container mx-auto'>
+            <div className='container mx-auto px-4 md:px-0'>
                 <h1 className='text-4xl font-bold pb-6'> 1. Helping the marginalized communities</h1>
                 <div className='mt-6 mb-16'>
                     <p className='font-bold'>1. Helping the marginalized communities </p>
@@ -101,8 +102,9 @@ const WhyWeExists = () => {
                     <p className='text-neutral-600'>- - Monthly Income: $14,132 </p>
                     <p className='text-neutral-600'>-- Cash Distributed: $159,052 </p>
                 </div>
-                <button className='text-neutral-600 border border-neutral-700 px-4 py-2 rounded-xl'>View Ledger</button>
-
+                <Link href='/component/ledger'>
+                    <button className='text-neutral-600 border border-neutral-700 px-4 py-2 rounded-xl'>View Ledger</button>
+                </Link>
             </div>
 
 
@@ -111,24 +113,30 @@ const WhyWeExists = () => {
             {/*  */}
 
             <div>
-                <div className='container mx-auto py-24'>
+                <div className='container mx-auto py-24 px-4 md:px-0'>
                     <h1 className='text-4xl font-bold text-center'>Where we are today?</h1>
                     <p className='text-neutral-500 mt-5 mb-16 text-center'>Transforming Financial Data into Trustworthy Insights</p>
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                         <div className=' border-2 border-neutral-500 p-5 rounded-2xl bg-white'>
                             <p className='text-neutral-800'>Total Philanthropists:</p>
                             <p className='text-2xl md:text-6xl font-bold text-primaryColor my-2'>$14,000<span className='text-neutral-600 text-xl'>Active</span></p>
-                            <button className='text-neutral-500 border border-neutral-500 px-4 py-2 rounded-xl my-2'>View Village</button>
+                            <Link href=''>
+                                <button className='text-neutral-500 border border-neutral-500 px-4 py-2 rounded-xl my-2'>View Village</button>
+                            </Link>
                         </div>
                         <div className=' border-2 border-neutral-500 p-5 rounded-2xl bg-white'>
-                            <p className='text-neutral-800'>Monthly Income::</p>
+                            <p className='text-neutral-800'>Monthly Income:</p>
                             <p className='text-2xl md:text-6xl font-bold text-primaryColor my-2'>$13,367 <span className='text-neutral-600 text-xl'>/m</span></p>
-                            <button className='text-neutral-500 border border-neutral-500 px-4 py-2 rounded-xl my-2'>View Ledger</button>
+                            <Link href='/component/ledger'>
+                                <button className='text-neutral-500 border border-neutral-500 px-4 py-2 rounded-xl my-2'>View Ledger</button>
+                            </Link>
                         </div>
                         <div className=' border-2 border-neutral-500 p-5 rounded-2xl bg-white'>
                             <p className='text-neutral-800'>Capital Deployed::</p>
                             <p className='text-2xl md:text-6xl font-bold text-primaryColor my-2'>$159,023</p>
-                            <button className='text-neutral-500 border border-neutral-500 px-4 py-2 rounded-xl my-2'>View Projects</button>
+                            <Link href='/projects'>
+                                <button className='text-neutral-500 border border-neutral-500 px-4 py-2 rounded-xl my-2'>View Projects</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

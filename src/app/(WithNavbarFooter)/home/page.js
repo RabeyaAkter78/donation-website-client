@@ -18,7 +18,7 @@ const HomePage = () => {
                 <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
 
-            <div className="flex flex-col justify-center items-center absolute top-[40%] w-full px-4 text-center space-y-4">
+            <div className="flex flex-col justify-center items-center absolute top-20 md:top-[40%] w-full px-4 text-center space-y-4">
                 <span className="bg-red-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
                     25th Anniversary
                 </span>
@@ -29,7 +29,7 @@ const HomePage = () => {
                 <p className="text-white text-base md:text-lg max-w-2xl">
                     Inspired by Romans 8:38-39, we are on a mission to spread Christ's love through acts of kindness.
                 </p>
-                <div className="flex justify-center items-center gap-4 mt-4">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-4">
                     <Link href="/component/how-it-works">
                         <button className="flex justify-center items-center gap-2 border-2 text-white px-6 py-3 rounded-md shadow-lg">
                             How Jesus Loves You Works <LuPlayCircle />

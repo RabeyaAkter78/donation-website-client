@@ -3,8 +3,8 @@ import React from 'react';
 
 const MonthlyIncome = () => {
     return (
-        <div className='container mx-auto'>
-            <div className='mt-16 my-24 flex justify-between items-center p-5 border-2 rounded-3xl border-neutral-500'>
+        <div className='container mx-auto px-4'>
+            <div className='mt-16 my-24 flex flex-col md:flex-row justify-between items-center p-5 border-2 rounded-3xl border-neutral-500'>
                 <div>
                     <p>Monthly Income</p>
                     <p className='text-3xl font-bold'>$13,367 </p>

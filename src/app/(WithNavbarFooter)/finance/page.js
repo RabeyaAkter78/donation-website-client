@@ -41,8 +41,8 @@ const TransparentFinance = () => {
 
     return (
         <div className='bg-[#fcf4f4]'>
-            <div className='container mx-auto py-24'>
-                <div className='flex justify-between items-center'>
+            <div className='container mx-auto py-24 px-4 md:px-0'>
+                <div className='flex flex-col md:flex-row justify-between items-center mb-5 md:mb-0'>
                     <div>
                         <h1 className='text-4xl font-bold'>Open and Transparent Finances</h1>
                         <p className='text-neutral-500 mt-5 mb-16'>Transforming Financial Data into Trustworthy Insights</p>
