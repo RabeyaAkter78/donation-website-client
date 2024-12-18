@@ -77,9 +77,11 @@ const Blogs = () => {
                         />
                         <div className='p-5 '>
                             <p className='text-primaryColor my-5'>{blog.title}</p>
-                            <p className='font-bold text-xl h-12'>{blog.subtitle}</p>
-                            <p className='text-neutral-500  line-clamp-2'>{blog.details}</p>
-                            <button className='text-primaryColor flex justify-center items-center gap-2 mt-5'>Learn More<MdOutlineArrowOutward /></button>
+                            <p className='font-bold text-xl h-12 my-5'>{blog.subtitle}</p>
+                            <p className='text-neutral-500  line-clamp-2 my-5'>{blog.details}</p>
+                            <Link href="">
+                                <button className='text-primaryColor flex justify-center items-center gap-2 mt-5'>Learn More<MdOutlineArrowOutward /></button>
+                            </Link>
                         </div>
                     </div>
                 </div>)}

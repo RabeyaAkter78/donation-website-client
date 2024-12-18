@@ -7,6 +7,7 @@ import img from "../../../images/img.png"
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
 import GoBackButton from "../shared/GoBackButton/GoBackButton";
+import Link from "next/link";
 const AllProject = () => {
     const data = [
         {
@@ -128,9 +129,11 @@ const AllProject = () => {
                                 <div className="p-5 ">
                                     <h3 className="font-semibold text-sm text-red-500">{item.title}</h3>
                                     <p className="text-gray-600 mt-2 h-20">{item.description}</p>
-                                    <button className="flex justify-center items-center gap-2 mt-2 text-sm text-red-500 font-semibold">
-                                        {item.learnMore} <GoArrowUpRight />
-                                    </button>
+                                    <Link href="/component/project-details">
+                                        <button className="flex justify-center items-center gap-2 mt-2 text-sm text-red-500 font-semibold">
+                                            {item.learnMore} <GoArrowUpRight />
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         ))}

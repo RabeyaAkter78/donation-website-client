@@ -65,9 +65,9 @@ const GrantPage = () => {
                     description={"All grants we've made to entrepreneurs solving for social impact."} />
             </div>
 
-            <div className="container mx-auto">
+            <div className="">
                 <div className=" my-10">
-                    <div className="flex justify-between items-center  bg-neutral-200 py-2 px-3 w-72 mx-auto rounded-xl   ">
+                    <div className="flex justify-between items-center  bg-neutral-200 py-2 px-3 w-72 mx-auto rounded-xl  mb-10 ">
                         <p className="mt-3 font-semibold"> Type</p>
                         {['Projects', 'Grants'].map((tab) => (
                             <button
@@ -83,57 +83,56 @@ const GrantPage = () => {
                     </div>
 
 
-
-                    {
-                        activeTab === 'Grants' ?
-                            <div className="max-w-2xl mx-auto  bg-white rounded-xl p-4">
-                                {donations.map((donation) => (
-                                    <div
-                                        key={donation.id}
-                                        className="flex items-center justify-between border-b border-gray-200 py-4"
-                                    >
-                                        <div className="flex items-center gap-4">
-                                            <Image
-                                                src={img}
-                                                alt={donation.name}
-                                                className="w-16 h-16 rounded-md object-cover"
-                                            />
-                                            <div>
-                                                <h2 className="font-semibold text-lg">{donation.name}</h2>
-                                                <p className="text-gray-600 text-sm">{donation.description}</p>
-                                                <div className='flex justify-start items-center gap-2'>
-                                                    <button className="mt-2 px-4 py-1 text-sm bg-neutral-200 rounded-md">
-                                                        Location :{donation.location}
-                                                    </button>
-                                                    <button className="mt-2 px-4 py-1 text-sm bg-neutral-200 rounded-md">
-                                                        Focus: {donation.focus}
-                                                    </button>
+                    <div className='bg-red-50 py-16'>
+                        {
+                            activeTab === 'Grants' ?
+                                <div className="max-w-4xl mx-auto   rounded-xl p-4 bg-white">
+                                    {donations.map((donation) => (
+                                        <div
+                                            key={donation.id}
+                                            className="flex items-center justify-between border-b border-gray-200 py-4"
+                                        >
+                                            <div className="flex items-center gap-4">
+                                                <Image
+                                                    src={img}
+                                                    alt={donation.name}
+                                                    className="w-16 h-16 rounded-md object-cover"
+                                                />
+                                                <div>
+                                                    <h2 className="font-semibold text-lg">{donation.name}</h2>
+                                                    <p className="text-gray-600 text-sm">{donation.description}</p>
+                                                    <div className='flex justify-start items-center gap-2'>
+                                                        <button className="mt-2 px-4 py-1 text-sm bg-neutral-200 rounded-md">
+                                                            Location :{donation.location}
+                                                        </button>
+                                                        <button className="mt-2 px-4 py-1 text-sm bg-neutral-200 rounded-md">
+                                                            Focus: {donation.focus}
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div className="text-right">
+                                                <p className="text-lg font-semibold">{donation.amount}</p>
+                                                <p className="text-gray-500 text-sm">{donation.date}</p>
+                                            </div>
+                                            <Link href="/component/project-details" className=" mt-2 px-4 py-1 text-sm  rounded-md">
+                                                <GoArrowUpRight className='w-6 h-6' />
+                                            </Link>
                                         </div>
-                                        <div className="text-right">
-                                            <p className="text-lg font-semibold">{donation.amount}</p>
-                                            <p className="text-gray-500 text-sm">{donation.date}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                            :
-                            null
-
-                    }
-
+                                    ))}
+                                </div>
+                                :
+                                null
+                        }
+                    </div>
 
 
                 </div>
-            </div>
 
 
-            <div className='bg-red-50 py-24'>
-
-                <div className="container mx-auto text-center text-gray-600 text-sm mt-4">
-                    The rest of the financial data is available to villagers only.
-                    <button className="ml-2 px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm">Login →</button>
+                <div className="container mx-auto text-center text-gray-600 text-sm mt-4 mb-20">
+                    Need help or have a question?
+                    <Link href="/signup" className='text-primaryColor underline ml-2'> Contact our team</Link>
                 </div>
             </div>
             <CollectivePhilanThropy />

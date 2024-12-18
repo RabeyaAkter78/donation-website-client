@@ -18,9 +18,9 @@ const ChrisAction = () => {
                         className=" object-cover"
                     />
                     <div>
-                        <h1 className='text-6xl font-bold'>Together, We <br></br> Reflect <span className='text-primaryColor'>Christ's Love</span>  <br></br> Through Action</h1>
-                        <p>From feeding the hungry to sheltering the homeless, we further the  <br></br> kingdom of Christ through acts of grace.</p>
-                        <div className="flex flex-col md:flex-row justify-start items-center gap-4 mt-4">
+                        <h1 className='text-6xl font-bold mb-10'>Together, We <br></br> Reflect <span className='text-primaryColor '>Christ's Love</span>  <br></br> Through Action</h1>
+                        <p className='my-5'>From feeding the hungry to sheltering the homeless, we further the  <br></br> kingdom of Christ through acts of grace.</p>
+                        <div className="flex flex-col md:flex-row justify-start items-center gap-4 mt-20">
                             <Link href="/component/why-we-exists">
                                 <button className=" border-2  px-6 py-3 rounded-md shadow-lg">
                                     leran More
