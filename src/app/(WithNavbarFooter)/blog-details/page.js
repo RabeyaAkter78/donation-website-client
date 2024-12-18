@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import CollectivePhilanThropy from '@/app/component/shared/CollectivePhilanThropy/CollectivePhilanThropy';
 import GoBackButton from '@/app/component/shared/GoBackButton/GoBackButton';
 import SectionTitle from '@/app/component/shared/SectionTitle/SectionTitle';

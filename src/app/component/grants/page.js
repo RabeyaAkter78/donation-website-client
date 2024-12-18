@@ -85,7 +85,6 @@ const GrantPage = () => {
 
                     <div className='bg-red-50 py-16'>
                         {
-
                             activeTab === 'Grants' ?
                                 <div className="max-w-4xl mx-auto   rounded-xl p-4 bg-white">
                                     {donations.map((donation) => (
@@ -116,7 +115,7 @@ const GrantPage = () => {
                                                 <p className="text-lg font-semibold">{donation.amount}</p>
                                                 <p className="text-gray-500 text-sm">{donation.date}</p>
                                             </div>
-                                            <Link href="/component/how-it-works" className=" mt-2 px-4 py-1 text-sm  rounded-md">
+                                            <Link href="/component/project-details" className=" mt-2 px-4 py-1 text-sm  rounded-md">
                                                 <GoArrowUpRight className='w-6 h-6' />
                                             </Link>
                                         </div>
@@ -133,7 +132,7 @@ const GrantPage = () => {
 
                 <div className="container mx-auto text-center text-gray-600 text-sm mt-4 mb-20">
                     Need help or have a question?
-                    <Link href="/contact" className='text-primaryColor underline ml-2'> Contact our team</Link>
+                    <Link href="/signup" className='text-primaryColor underline ml-2'> Contact our team</Link>
                 </div>
             </div>
             <CollectivePhilanThropy />

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import img from "../../../images/img.png"
+import Link from 'next/link';
 const DonationPage = () => {
     const donations = [
         {
@@ -71,9 +72,11 @@ const DonationPage = () => {
                             <div>
                                 <h2 className="font-semibold text-lg">{donation.name}</h2>
                                 <p className="text-gray-600 text-sm">{donation.description}</p>
-                                <button className="mt-2 px-4 py-1 text-sm text-blue-500 border border-blue-500 rounded-md">
-                                    View More
-                                </button>
+                                <Link href="/component/project-details">
+                                    <button className="mt-2 px-4 py-1 text-sm text-blue-500 border border-blue-500 rounded-md">
+                                        View More
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         <div className="text-right">
