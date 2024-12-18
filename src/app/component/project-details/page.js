@@ -15,7 +15,7 @@ const ProjectDetails = () => {
                     title={"Helping rural family farms in Sierra Leone earn income"}
                     description={"An open view of policies and programs voted on by our community. See what's proposed, enacted, and costs associated with each policy."}
                 />
-                <div className='max-w-screen-lg mx-auto'>
+                <div className='max-w-screen-lg mx-auto px-4 md:px-0'>
                     <div>
                         <p className='text-neutral-500 border-b border-b-neutral-500 py-4'>Payout date: 27 Mar 2022</p>
                         <p className='text-neutral-500'>
@@ -24,7 +24,7 @@ const ProjectDetails = () => {
                         <p className='text-neutral-500 text-md md:text-4xl font-bold'>
                             $10,000
                         </p>
-                        <div className='w-full flex justify-beween items-center gap-3'>
+                        <div className='w-full flex flex-col md:flex-row justify-beween items-center gap-3'>
                             <Link href="/signup">
                                 <button className='px-10 py-2 rounded-full bg-primaryColor text-white'>Join to Contribute</button>
                             </Link>

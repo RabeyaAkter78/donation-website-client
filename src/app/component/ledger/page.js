@@ -53,7 +53,7 @@ const Ledger = () => {
                                 <p className="text-sm text-gray-500">Oct 17</p>
                                 <p className="text-gray-700 font-medium">Subscription to Figma</p>
                             </div>
-                            <div className="flex items-center space-x-2">
+                            <div className="flex flex-col md:flex-row items-center space-x-2">
                                 <button className="bg-gray-200 text-sm text-gray-600 px-2 py-1 rounded">See more</button>
                                 <span className="text-red-500 font-semibold">- $36.00</span>
                             </div>
@@ -65,7 +65,7 @@ const Ledger = () => {
                                 <p className="text-sm text-gray-500">Oct 14</p>
                                 <p className="text-gray-700 font-medium">Contributions & Donations</p>
                             </div>
-                            <div className="flex items-center space-x-2">
+                            <div className="flex  flex-col md:flex-row  items-center space-x-2">
                                 <button className="bg-gray-200 text-sm text-gray-600 px-2 py-1 rounded">Show Line Items</button>
                                 <span className="text-green-500 font-semibold">+ $1,966.26</span>
                             </div>
@@ -77,7 +77,7 @@ const Ledger = () => {
                                 <p className="text-sm text-gray-500">Oct 14</p>
                                 <p className="text-gray-700 font-medium">Meta Advertising Costs</p>
                             </div>
-                            <div className="flex items-center space-x-2">
+                            <div className="flex  flex-col md:flex-row  items-center space-x-2">
                                 <button className="bg-gray-200 text-sm text-gray-600 px-2 py-1 rounded">See more</button>
                                 <span className="text-red-500 font-semibold">- $913.57</span>
                             </div>
